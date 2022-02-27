@@ -1,0 +1,33 @@
+{
+  "name": "mixins",
+  "version": "1.0.0",
+  "description": "Mixins in JavaScript",
+  "main": "library/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teplovs/mixins.git"
+  },
+  "keywords": [
+    "mixins",
+    "class-composition",
+    "util",
+    "utility",
+    "helper"
+  ],
+  "author": "Ivan Teplov <iteplov7@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/teplovs/mixins/issues"
+  },
+  "homepage": "https://github.com/teplovs/mixins#readme",
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.3",
+    "typescript": "^4.5.5"
+  }
+}
