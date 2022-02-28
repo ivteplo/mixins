@@ -13,7 +13,7 @@ const helper = () => {
   )
 
   class Parent {
-    items = []
+    constructor(public items: any[] = []) {}
   }
 
   return {

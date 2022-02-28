@@ -1,7 +1,7 @@
 // Copyright (c) 2022 Ivan Teplov
 
-export type Class<T> = Function & {
-  new(): T
+export type Class<T, Args extends any[]> = Function & {
+  new(...args: Args): T
 }
 
 /**
@@ -11,8 +11,9 @@ export type Class<T> = Function & {
  */
 export function createMixin<
   MixinParameters extends any[],
+  ClassArguments extends any[],
   ClassInstanceType = any,
-  ParentClass = Class<ClassInstanceType>,
+  ParentClass = Class<ClassInstanceType, ClassArguments>,
   MixinClass = ParentClass
 >(
   createClass: (
